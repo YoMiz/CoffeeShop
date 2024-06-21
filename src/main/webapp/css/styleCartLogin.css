@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+header, footer{
+	background-color: rgb(64,0,0);
+	color: white;
+}
+nav li {
+    display: inline-block;
+}
+nav li a {
+    text-decoration: none;
+    color: rgb(204, 204, 204);
+    margin:3em;
+}
+nav a:hover{
+	color: grey;
+}
+nav a{
+	color:white;
+}
+/* テーブルの枠線を細くする */
+table {
+	border: 1px solid black;
+	margin-left: 10px;
+}
+
+/* テーブルのセルの余白を調整する */
+td,
+th {
+	padding: 10px;
+	text-align: end;
+}
+
+.reconfirm-list td{ padding-left: 25rem;
+}
+.reconfirm-list th{	padding-left: 8rem;
+}
+.new-user-list td{ width: 80%;
+}
+.new-user-list td>li{width: 100% ;
+}
+/* テーブルの見出しの背景色を濃いコーヒー色にする */
+th {
+	background-color: rgb(64, 0, 0);
+	color: white;
+}
+
+/* テーブルの偶数行の背景色を薄いコーヒー色にする */
+tr:nth-child(even) {
+	background-color: #9C7F61;
+	color: white;
+}
+
+/* テーブルの奇数行の背景色をクリーム色にする */
+tr:nth-child(odd) {
+	background-color: #F5F5DC;
+	color: black;
+}
+
+/* 数量の入力ボックスの大きさを調整する */
+.amount {
+	width: 45px;
+}
+
+/* 豆の画像の余白を調整する */
+img {
+	margin: 5px;
+}
+
+.image_beans {
+	height: calc(30vh - 44px);
+	background-image: url(../images/bean1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+.sub-contents{
+	background-color: rgb(64,0,0);
+	color: white;
+	display: flex; 
+	align-items:center;
+	
+}
+.sub-contents>h2{
+	margin-right:3rem;
+	margin-left:15px;
+}
+.user_info>p {
+	color: white;
+	text-align: center;
+}
+
+.user_info th{
+	text-align: right;
+}
+
+.button:hover {
+	color:white;
+	font-weight: bold;
+	border-radius: 25%;
+	height: 2rem;
+	width: 7rem;
+	font-size: 18px;
+	background-color: rgb(140,100,100);
+	position: relative;
+	transition: background-color 0.5s, border-radius 0.5s;
+	margin-left: 30px;
+	padding-bottom: 33px;
+}
+
+
+.button {
+	color:white;
+	text-shadow: 1px 1px 10px #4b2c14;
+	background-color: rgb(150, 90, 80);
+	display: inline-block;
+	height:2rem;
+	width: 7rem;
+	font-size:18px;
+	animation: alternate;
+	margin-left: 30px;
+	padding-bottom:33px;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.loginBtn{
+	position:relative;
+}
+.newMemberBtn{
+	position: absolute;
+	left:10%;
+	bottom:0%
+}
